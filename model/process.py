@@ -51,7 +51,7 @@ def make_data():
 
 
 def get_stock_history(data):
-    stocks = " ".join(list(data.keys()))[:1000]
+    stocks = " ".join(list(data.keys()))
     ticker_data = yf.download(
         stocks, start="2010-02-03", end="2020-06-04"
     )  # data range is from 02-2010 to 06-2020
