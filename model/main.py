@@ -28,7 +28,7 @@ if __name__ == "__main__":
         emb_args = {}
         headline = None
 
-        pattern = r"(?:headline='(?P<headline>[^']*)'.*date=(?P<date>\d{4}-\d{2}-\d{2}).*ticker=(?P<ticker>[A-Za-z\-]+))|(?:headline='(?P<headline>[^']*)'.*ticker=(?P<ticker>[A-Za-z\-]+).*date=(?P<date>\d{4}-\d{2}-\d{2}))|(?:date=(?P<date>\d{4}-\d{2}-\d{2}).*headline='(?P<headline>[^']*)'.*ticker=(?P<ticker>[A-Za-z\-]+))|(?:date=(?P<date>\d{4}-\d{2}-\d{2}).*ticker=(?P<ticker>[A-Za-z\-]+).*headline='(?P<headline>[^']*)')"
+        pattern = r"headline='(?P<headline>[^']*)'.*date=(?P<date>\d{4}-\d{2}-\d{2}).*ticker=(?P<ticker>[A-Za-z\-]+)"
 
         match = re.search(pattern, opts.make_embedding)
         if not match.group("ticker"):
