@@ -1,8 +1,4 @@
 import argparse
-import process
-import train
-import infer
-import utils
 from matplotlib import pyplot as plt
 import re
 
@@ -16,6 +12,8 @@ opts = args.parse_args()
 
 if __name__ == "__main__":
     if opts.process:
+        import process
+
         print("Processing data...")
         data = process.make_data()
         ticker_data = process.get_stock_history(data)
@@ -23,6 +21,8 @@ if __name__ == "__main__":
         crude_embeddings = process.make_crude_embeddings(embeddings)
 
     elif opts.make_embedding:
+        import utils
+
         print(f"Making embedding for {opts.make_embedding}...")
 
         emb_args = {}
@@ -42,6 +42,8 @@ if __name__ == "__main__":
         print(f"Embedding: {out_embedding}")
 
     elif opts.train:
+        import train
+
         print("Training KNN model...")
 
         normalized, keys = train.normalize_embeddings()
@@ -49,6 +51,8 @@ if __name__ == "__main__":
         print("Model saved to saves/knn.pkl")
 
     elif opts.infer:
+        import infer
+        
         print("Inferring model...")
         infer_args = {}
         for arg in opts.infer.split():
