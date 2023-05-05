@@ -18,9 +18,11 @@ While this repository is intended to be a simple PoC, it is also intended to be 
 For those who wish to run the project locally, the following steps are recommended:
 1. Clone the repository
    ``git clone https://github.com/finned-tech/MEIP.git``
-2. Install the dependencies
-   ``pip install -e .``
-3. Run the project
+2. ``cd`` into the repository
+   ``cd MEIP``
+3. Install the dependencies
+   ``pip install -r requirements.txt``
+4. Run the project
    ``python main.py``
 
 There are a few arguments that can be passed to the main script in order to process, train, and predict with the model locally. These arguments are as follows:
