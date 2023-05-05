@@ -13,7 +13,7 @@ A multi-model approach is taken towards the embedding and inference of ticker pe
 <br>
 
 # Usage
-While this repository is intended to be a simple PoC, it is also intended to be a template for future projects. As such, the project is structured in a way that allows for easy extension and modification. A Google Colab notebook is provided for ease of use [here]().
+While this repository is intended to be a simple PoC, it is also intended to be a template for future projects. As such, the project is structured in a way that allows for easy extension and modification. A Google Colab notebook is provided for ease of use [here](https://colab.research.google.com/drive/1ZfNHHZBpsqM7JHFNWPjgVhEKdp9tWQGN?usp=sharing).
 
 For those who wish to run the project locally, the following steps are recommended:
 1. Clone the repository
