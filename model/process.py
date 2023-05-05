@@ -7,12 +7,10 @@ from datetime import datetime
 import pickle
 import pandas as pd
 from tqdm import tqdm
-from statistics import geometric_mean
 import requests
 
 # Sentiment analysis deps
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
-import numpy as np
 
 nltk.download("vader_lexicon")  # Install only at first run
 vader = SentimentIntensityAnalyzer()

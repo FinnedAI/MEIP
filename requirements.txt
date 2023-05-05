@@ -5,6 +5,5 @@ numpy==1.23.3
 pandas==1.5.2
 requests==2.27.1
 scikit_learn==1.2.2
-tensorflow_addons==0.20.0
 tqdm==4.64.0
 yfinance==0.2.12

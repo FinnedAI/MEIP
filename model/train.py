@@ -1,8 +1,5 @@
 from sklearn.preprocessing import normalize
 from sklearn.neighbors import NearestNeighbors
-from keras.models import Sequential
-from keras.layers import Dense
-import tensorflow_addons as tfa
 from tqdm import tqdm
 import os
 import pickle
