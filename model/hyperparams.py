@@ -1,9 +1,9 @@
-PCT_DULL = 10
+PCT_DULL = 5
 # This is the amount we want to dull the volatility of a day's change by
-MAX_DAYS_DIFF = 2
+MAX_DAYS_DIFF = 1
 # This is the maximum number of days we want to allow between the current day
 # and the day we're predicting
-SENT_PROB_DIST = list(range(-8, 13))
+SENT_PROB_DIST = list(range(-10, 11))
 # The is the distribution of the sentiment probabilities, which is skewed to
 # the right, as the average sentiment is roughly 0.2 (as determined by analysis)
 SENT_PROBS = [
