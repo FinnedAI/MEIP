@@ -4,6 +4,7 @@
 <br>
 
 ![Example](examples/infer.png)
+
 **AAPL prediction**, YTD as of 2023-05-04. To reproduce, run: ``--infer "embedding=169.27999877929688,169.58999633789062,52472900,0.0018312710351440706,0.28674579694725333,-0.4767 days=365"``
 
 <br>
